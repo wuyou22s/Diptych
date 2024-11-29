@@ -2,7 +2,7 @@
 
 <!-- ![](assets/teaser.png) -->
 
-Code implementation of "Large-Scale Text-to-Image Model with Inpainting is a Zero-Shot Subject-Driven Image Generator" [[Link](https://arxiv.org/pdf/2411.15466)] 
+Unofficial code implementation of "Large-Scale Text-to-Image Model with Inpainting is a Zero-Shot Subject-Driven Image Generator" [[Link](https://arxiv.org/pdf/2411.15466)] 
 
 <!-- Will appear at CVPR 2024! -->
 
