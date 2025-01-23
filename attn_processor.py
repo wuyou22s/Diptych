@@ -53,7 +53,7 @@ def scaled_dot_product_attention(query, key, value, h_eq, h_ek, h_q, h_k, attn_m
     attn_weight = torch.dropout(attn_weight, dropout_p, train=True)
 
     # attention enhancement
-    attn_weight[:, :, h_ek:h_ek + int(h_k/2), h_eq + int(h_q/2):] = 1.0 * attn_weight[:, :, h_ek:h_ek + int(h_k/2), h_eq + int(h_q/2):]
+    attn_weight[:, :, h_eq + int(h_q/2):, h_ek:h_ek + int(h_k/2)] = 1.0 * attn_weight[:, :, h_eq + int(h_q/2):, h_ek:h_ek + int(h_k/2)]
 
     return attn_weight @ value
 
